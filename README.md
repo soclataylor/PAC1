@@ -27,13 +27,13 @@ Exercici
 Crear un fitxer cv.html utilitzant les etiquetes o tags HTML necessàris per aconseguir la següent estructura:
  
 
-1. Un títol principal (<h1>) i un títol per cada secció (<h2>).
+1. Un títol principal (< h1 >) i un títol per cada secció (< h2 >).
 
 Es recomana utilitzar l'etiqueta h1 per al títol principal, i que a cada pàgina només n'hi hagi un d'aquest tipus. Tota la resta de títols es poden crear amb h2, h3, h4, h5 i h6, utilitzats de forma jeràrquica. Per exemple, els títols de secció podrien ser h2, i si a dins d'una secció cal un altre subtítol, podria ser h3, i així successivament.
  
 Cada títol ha de tenir un identificador amb l'atribut ID, de manera que servirà de destí per quan es fagi clic des d'un enllaç. Per exempe, si volem que la secció idiomes tingui l'identificador "idiomes":
  
-<h2 id="idiomes">Idiomes</h2>
+< h2 id="idiomes">Idiomes</h2>
  
 És important que els identificados siguin únics (no estiguin repetits), idealment escrits en lletres minúscules, no poden començar per un número i no poden contenir caractres "extranys" (accénts, apostrofs, dièresis, ç, ñ...); és a dir, idealment només hauria de contenir lletres i si cal algún guió baix o mig ( _ o - ) 
  
@@ -45,12 +45,12 @@ Un petit índex on es llistin les diferents seccions. Per exemple: dades persona
 
 Per enllaçar un link a una secció, cal indicar a través de l'atribut href l'ID de l'objectiu precedit de # . Per exemple, si volem enllaçar un link amb el text "Idiomes" cap a la secció amb ID = "idiomes" ho podem fer de la següent forma:
  
-<a href="#idiomes">Anar a la secció Idiomes</a>
+< a href="#idiomes">Anar a la secció Idiomes</a>
  
  
 3. Una secció amb títol “Dades personals” amb les dades personals bàsiques (aquesta informació no cal que sigui real): nom i cognoms, data i lloc de naixement i adreça de residència actual.
  
-Es poden utilitzar els tags: <p>, <span>, <div> ...
+Es poden utilitzar els tags: < p >, < span >, < div > ...
  
 4. Una secció amb títol “Idiomes” amb una taula amb els idiomes que es parlen, on s'indiqui l'idioma i el nivell. Similar a l'exemple següent:
  
@@ -60,7 +60,7 @@ Espanyol	 	 	 	x
 Anglès	 	 	x	 
  
 
-Es poden utilitzar els tags: <table>, <thead>, <th>, <tr>, <td>
+Es poden utilitzar els tags: < table >, < thead >, < th >, < tr >, < td >
 
  
 5. Una secció amb títol “Estudis” amb un llistat dels estudis realitzats, el nom del centre i la data, amb el format: estudis en negreta, salt de línia i nom del centre. Per exemple:
@@ -71,7 +71,7 @@ Enginyeria Informàtica de Gestió
 Universitat Rovira i Virgili (URV).
 Màster en Multimèdia
 Escoles Universitàries Gimbernat i Tomàs Cerdà (EUG).
-Es poden utilitzar els tags: <ul>, <li>,<br>, <div>, <p>, <strong>, <i>
+Es poden utilitzar els tags: < ul >, < li >,< br >, < div >, < p >, < strong >, < i >
 
 6. Una secció amb títol “Laboral” amb un llistat de les feines realitzades, la localitat, la data i una breu descripció de les tasques realitzades, amb el format: posició o nom de la feina en negreta i, entre parèntesis, la localitat en cursiva i el període temporal. Un salt de línia i escriure una breu descripció de les tasques realitzades. Per exemple:
  
@@ -126,10 +126,10 @@ Cada pàgina, respectivament, haurà de contenir els elements HTML necessaris pe
 Per exemple, a la capçalera del disseny apareixen una imatge full width amb un text. Treballant només amb HTML sense CSS, no hi ha manera d'aconseguir que el resultat final s'assembli al disseny proposat, però si que s'ha de construïr una estructura amb els elements identificats, com poden ser un contenedor (section, article, div…), una imatge (img) i un text (h2, h3, p, span…). El resultat d'aquesta part podria ser quelcom similar a:
 
  
-<section>
+< section>
     <img src=”...”>
     <h2>La web de Homer Simpson</h2>
-</section>
+< /section>
  
 
 També caldrà crear una carpeta on desar els assets o imatges i recursos addicionals. Amb l'objectiu de tenir els fitxers ben estructurats, sol ser una bona pràctica agrupar i ordenar els diferents fitxers i recursos utilitzats en una carpeta típicament anomenda assets o algun nom similar fàcilment identificable. Cal tenir en compte assignar rutes relatives quan s'utilitzi l'etiqueta img, això vol dir que quan es cridi una imatge des d'un fitxer HTML, s'ha d'indicar la ubicació de la imatge a partir de la ubicació del fitxer des d'on es crida. Per exemple:
@@ -144,7 +144,7 @@ index.html
 
 Si volem mostrar una imatge des del nostre fitxer index.html, podrem utilitzar l'etiqueta img i indicar-li la ruta corresponent.
  
-<img src=”assets/img/imatge.jpg”>
+< img src=”assets/img/imatge.jpg”>
  
 En canvi, si tenim la imatge al mateix nivell que el nostre fitxer HTML:
  
@@ -153,15 +153,15 @@ imatge.jpg
  
 Per mostrar una imatge des del nostre fitxer index.html haurem de cridar la ruta:
  
-<img src=”imatge.jpg”>
+< img src=”imatge.jpg”>
  
 En que es vulgui utilitzar una imatge en format svg, es pot fer de 2 maneres. Utilitzar l'etiqueta <img> i posar-li la ruta com si fós un altre format més:
 
-<img src=”assets/twitter.svg”>
+< img src=”assets/twitter.svg”>
 
 O directament obrir el fitxer svg amb l'editor VS Code i copiar tot el codi, com si fós una etiqueta més de HTML.
 
-<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Book</title><path d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0116 16v288a16 16 0 01-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0116-16c131.57.59 192 32.84 208 96zM256 160v288" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+< svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Book</title><path d="M256 160c16-63.16 76.43-95.41 208-96a15.94 15.94 0 0116 16v288a16 16 0 01-16 16c-128 0-177.45 25.81-208 64-30.37-38-80-64-208-64-9.88 0-16-8.05-16-17.93V80a15.94 15.94 0 0116-16c131.57.59 192 32.84 208 96zM256 160v288" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg >
  
  
 
@@ -175,8 +175,8 @@ Un botó per enviar el formulari (opcionalment est pot treballar l'enviament d'u
 
 Tots els camps excepte el botó d'enviament han d'anar acompanyats de la seva corresponent etiqueta de text per informar de la finalitat del camp. Per exemple
 
-<label for=”campCP”>Escriu el teu codi postal</label>
-<input id=”campCP” type=”number”>
+< label for=”campCP”>Escriu el teu codi postal</label>
+< input id=”campCP” type=”number”>
  
 
 A tenir en compte
@@ -237,9 +237,9 @@ style.css
  
 
 index.html
-<h2 class=”titol”>Els nostre serveis</h2>
+< h2 class=”titol”>Els nostre serveis</h2>
 …
-<h2 class=”titol”>El nostre equip</h2>
+< h2 class=”titol”>El nostre equip</h2>
  
 
 Exercici
@@ -318,16 +318,16 @@ A tenir en compte
 
 Per exemple, per utlitzar Flexbox, cal tenir un element que actuï com a contenidor. D'una proposta inicial on s'ha identificat una secció destacada amb una imatge i un text es pot tenir quelcom així:
 
-<img src=”imatge.jgp”>
+< img src=”imatge.jgp”>
 <p>lorem ipsum dolor sit amet...</p>
  
 
 Però si volem tractar aquest conjut d'elements amb propietats Flexbox, caldrà posar-los a dins d'un altre element que actuï de contenidor. Per exemple:
 
-<div class=”destacat”>
+< div class=”destacat”>
   <img src=”imatge.jgp”>
-  <p>lorem ipsum dolor sit amet...</p>
-</div>
+  < p>lorem ipsum dolor sit amet...</p>
+< /div>
 
 D'aquesta manera ja podrem “atacar” aquesta secció desde la nostra classe CSS amb les propietats de Flexbox:
 
