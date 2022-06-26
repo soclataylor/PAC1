@@ -1,0 +1,11 @@
+COSES A FER QUAN TINGUI INTERNET:
+
+1 - descarregar les imatges de mostra per la part 1 i part 2 i mirar si em falta quelcom
+2 - mirar el textarea del formulari
+3 - mirar el mail del profe perquè a l'enunciat hi posa: us demanarem que ens envieu un correu a mi i al Luis amb
+un enllaç al vostre repositori de Github per tal de poder anar fent una mica de seguiment.
+4 - Al diseny del formulari, a l'apartat del checkbox hi ha un enllaç cap a la política de privacitat. No cal que
+porti a cap lloc ni que fagi res. Si algú es vol animar i crear un popup que mostri el text legal (encara que
+sigui inventat), deixo aquí un exemple.
+https://www.w3schools.com/howto/howto_css_modals.asp
+5 - 
