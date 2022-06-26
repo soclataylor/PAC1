@@ -76,10 +76,20 @@ header
 {
     width: 100%;
     height: 250px;
-    background-color:deeppink;
-    background-image:url('../img/colombia.jpeg');
+    background-image:url('../img/header1.png');
     
-    /*FER BACKGROUND AMB OPACITAT*/
+
     
 }
 
+/************************************* HEADER ***********************************************/
+footer
+{
+    background-color:#222222;
+}
+
+#container
+{
+    width: 800px;
+    margin:0 auto;
+}
