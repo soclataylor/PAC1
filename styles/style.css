@@ -1,0 +1,85 @@
+
+*
+{
+    /*resetegem els marges per defecte*/
+    margin: 0 auto;
+    /*modifiquem l'estil del text de tots els documents, sense serifa*/
+    font-family:sans-serif;
+}
+
+
+
+
+/************************************* BARRA DE NAVEGACIÓ ***********************************************/
+nav
+{
+    /*definim les mides i el color de fons*/
+    width: 100%;
+    height: 35px;
+    background-color:#222222;
+}
+
+
+li
+{
+    /*traiem els pics dels ítems de les llistes*/
+    list-style-type:none;
+}
+
+
+/*seleccionem tots els li fills de ul que siguin dins de  nav*/
+nav > ul > li
+{
+     
+    /*posicionem els elements horitzontalment*/
+    display:inline;
+    /*augmentem el farcit*/
+    padding:10px;
+    /*canviem el color del text dels elements del menú*/
+    color:white;
+    /*per fer comprovacions*/
+    /*background-color:yellow;*/
+
+
+}
+
+nav > ul > li > a
+{
+    /*eliminem el subratllat dels enllaços*/
+    text-decoration:none;
+}
+
+nav > ul > li > a:visited
+{
+    /*no volem que es modifiqui el color dels enllaços visitats*/
+    color:white;
+}
+
+/*seleccionem la imatge del menú de navegació*/
+#navBarLogo > img
+{
+    /*li modifiquem la mida perquè encaixi*/
+    height:35px;
+    width: auto;
+    /* */
+    float:left;
+
+}
+
+.navBar
+{
+    float:right;
+}
+/************************************* HEADER ***********************************************/
+
+header
+{
+    width: 100%;
+    height: 250px;
+    background-color:deeppink;
+    background-image:url('../img/colombia.jpeg');
+    
+    /*FER BACKGROUND AMB OPACITAT*/
+    
+}
+
